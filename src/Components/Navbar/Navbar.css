@@ -1,0 +1,124 @@
+.nav{
+    position: absolute;
+    width: 100%;
+    height:20vh;
+    background-color: transparent;
+    z-index: 100;
+}
+
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    transition: all 0.5s ease-in;
+}
+header>div{
+    display: flex;
+    align-items: center;
+}
+header>img{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.Nav_items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.translate{
+    color: #ffffff;
+   position:absolute;
+   padding: 0rem 0.5rem 0.5rem 0.2rem;
+    top: 2.5rem;
+}
+div>select{
+    width: 7rem;
+    height: 2.5rem;
+    background: transparent;
+    color: #ffffff;
+    padding:  0.5rem 0.5rem 0.5rem 1rem;
+    align-items: end;
+    border: solid 1px #ffffff80;
+    border-radius: 0.2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.Nav_items>a{
+    height: 2.5rem; 
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border: solid red 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* media query */
+/* ............Mobile.................. */
+
+@media (max-width:480px){
+    header{
+        width: 100%;
+    }
+    header>img{
+        width: 130px;
+    }
+    .Nav_items{
+        gap: 0.5rem;
+    }
+    .translate{
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
+    div>select{
+        width: 2.5rem;
+    }
+    .Nav_items>button{
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+}
+/*............Extra small devices.............. */
+@media (min-width: 481px) and (max-width: 767px){
+    header{
+        width: 90%;
+    }
+    .translate{
+        padding: 0rem 0.5rem 0.5rem 0.9rem;
+    }
+    div>select{
+        width: 3rem;
+    }
+    .Nav_items>button{
+        padding: 0.6rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+/* ............Tablet.................. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header{
+        width: 100%;
+    }
+    .translate{
+        padding: 0rem 0.5rem 0.5rem 0.2rem;
+    }
+}
+/* ............Large Tablets / Laptops .............. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    header{
+        width: 100%;
+    }
+    .translate{
+        padding: 0rem 0.5rem 0.5rem 0.2rem;
+    }
+
+}

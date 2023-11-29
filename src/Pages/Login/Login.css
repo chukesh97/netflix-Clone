@@ -1,0 +1,159 @@
+.login_screen_header{
+    position: absolute;
+    padding: 0rem 2rem;
+}
+.login_screen_header img{
+    width: 200px;
+    height: 120px;
+}
+
+.login_screen_background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.login_screen_background img{
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+}
+.login_screen_background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4));
+    z-index: 1;
+}
+.login_screen_body{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    border-radius: 0.5rem;
+    z-index: 2;
+}
+.login_screen_body h1{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.login_screen_body form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.Login_email{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.Login_email input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #333333cd;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+.Login_email label{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #bdb8b8;
+    transition: .5s;
+   
+}
+.Login_email input:focus ~ label{
+    top: -10px;
+    left: 15px;
+    color: #bdb8b8;
+    font-size: 14px;
+  }
+.password{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.password input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #333333cd;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+.password label{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #bdb8b8;
+    transition: .5s;
+   
+}
+.password input:focus ~ label{
+    top: -10px;
+    left: 15px;
+    color: #bdb8b8;
+    font-size: 14px;
+  }
+.login_screen_body form button{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e50914;
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.login_screen_body form button:hover{
+    background-color: #f40612;
+}
+.login_screen_remember_me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.login_screen_remember_me label{
+    color: #999;
+}
+.login_screen_remember_me input{
+    margin-right: 0.2rem;
+}
+.login_screen_body form a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.login_screen_body form a:hover{
+    text-decoration: underline;
+}
+
+
+
